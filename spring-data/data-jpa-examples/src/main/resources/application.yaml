@@ -1,6 +1,13 @@
 spring:
   config:
     import: optional:file:${user.home}/config/data-jpa-examples/config.yaml
+    # config.yaml 内容
+    #spring:
+    #  datasource:
+    #    driver-class-name: org.postgresql.Driver
+    #    url: jdbc:postgresql:xxx
+    #    username: xxx
+    #    password: xxx
   jpa:
     hibernate:
       ddl-auto: create-drop
