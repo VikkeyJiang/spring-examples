@@ -7,13 +7,13 @@ import java.time.ZonedDateTime;
 import java.util.List;
 
 @Entity(name = "data_jpa_account")
-public class Account {
+public class AccountEntity {
     @Id
     private String id;
     private String name;
 
     @OneToMany(mappedBy = "account")
-    private List<Password> passwords;
+    private List<PasswordEntity> passwordEntities;
     private boolean expired;
 
     private String locked;
@@ -36,12 +36,12 @@ public class Account {
         this.name = name;
     }
 
-    public List<Password> getPasswords() {
-        return passwords;
+    public List<PasswordEntity> getPasswords() {
+        return passwordEntities;
     }
 
-    public void setPasswords(List<Password> passwords) {
-        this.passwords = passwords;
+    public void setPasswords(List<PasswordEntity> passwordEntities) {
+        this.passwordEntities = passwordEntities;
     }
 
     public boolean isExpired() {

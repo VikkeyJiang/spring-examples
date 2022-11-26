@@ -7,13 +7,13 @@ import javax.persistence.ManyToOne;
 import java.time.ZonedDateTime;
 
 @Entity(name = "data_jpa_password")
-public class Password {
+public class PasswordEntity {
     @Id
     private Long id;
 
     @ManyToOne
     @JoinColumn(name = "account_id")
-    private Account account;
+    private AccountEntity accountEntity;
 
     private String value;
 
@@ -27,12 +27,12 @@ public class Password {
         return id;
     }
 
-    public Account getAccount() {
-        return account;
+    public AccountEntity getAccount() {
+        return accountEntity;
     }
 
-    public void setAccount(Account account) {
-        this.account = account;
+    public void setAccount(AccountEntity accountEntity) {
+        this.accountEntity = accountEntity;
     }
 
     public String getValue() {
