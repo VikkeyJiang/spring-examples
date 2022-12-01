@@ -20,15 +20,23 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        
+
         <spring-security.version>5.7.5</spring-security.version>
         <postgresq-jdbc.version>42.5.0</postgresq-jdbc.version>
+        <spring-cloud.version>2021.0.5</spring-cloud.version>
     </properties>
 
     <packaging>pom</packaging>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>org.postgresql</groupId>
                 <artifactId>postgresql</artifactId>
@@ -40,6 +48,8 @@
     <modules>
         <module>spring-security</module>
         <module>spring-data</module>
+        <module>spring-cloud</module>
+        <module>spring-cloud</module>
     </modules>
 
     <build>

@@ -8,13 +8,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringDataJPAExamples implements ApplicationRunner {
+public class SpringDataJPAApplication implements ApplicationRunner {
 
-    public static final Logger logger = LoggerFactory.getLogger(SpringDataJPAExamples.class);
+    public static final Logger logger = LoggerFactory.getLogger(SpringDataJPAApplication.class);
 
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringDataJPAExamples.class, args);
+        SpringApplication.run(SpringDataJPAApplication.class, args);
     }
 
     @Override
