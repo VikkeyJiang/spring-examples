@@ -22,8 +22,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <spring-security.version>5.7.5</spring-security.version>
-        <postgresq-jdbc.version>42.5.0</postgresq-jdbc.version>
+        <postgresql.version>42.5.0</postgresql.version>
         <spring-cloud.version>2021.0.5</spring-cloud.version>
+        <reactor-bom.version>2022.0.0</reactor-bom.version>
     </properties>
 
     <packaging>pom</packaging>
@@ -37,18 +38,12 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <dependency>
-                <groupId>org.postgresql</groupId>
-                <artifactId>postgresql</artifactId>
-                <version>${postgresq-jdbc.version}</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <modules>
         <module>spring-security</module>
         <module>spring-data</module>
-        <module>spring-cloud</module>
         <module>spring-cloud</module>
     </modules>
 
