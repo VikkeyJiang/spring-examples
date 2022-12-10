@@ -9,9 +9,9 @@
 
     <artifactId>spring-cloud</artifactId>
     <packaging>pom</packaging>
-    
+
     <modules>
-        <module>cloud-gateway</module>
+        <module>cloud-gateway-example</module>
     </modules>
 
 

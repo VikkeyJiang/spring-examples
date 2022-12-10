@@ -45,6 +45,7 @@
         <module>spring-security</module>
         <module>spring-data</module>
         <module>spring-cloud</module>
+        <module>reactor</module>
     </modules>
 
     <build>
